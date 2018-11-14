@@ -1,50 +1,29 @@
-# Minfront
+# web-components playground
 
-My minimum frontend boilerplate 201811
+- `<x-view />` : React Native's `View` like element
+- `<x-pane />` : Area filled version of `x-view`
 
-- yarn
-- parcel
-- typescript
-- jest
-- netlify
+## Example
 
-This code does **not** include framework, lint, ci, and other (production) tools.
-
-## Bootstrap
-
-```bash
-# ... Setup node and yarn
-$ git clone git@github.com:mizchi-sandbox/minfront.git --depth 1 myspa
-$ cd myspa
-$ git remote rm origin # optional
-$ yarn install
-$ yarn dev    # Start app server
-$ yarn build  # Build to dist
-$ yarn test   # Run jest
-$ yarn deploy # Deploy to netlify
+```html
+<x-view style="height: 300px;">
+  <x-view style="flex: 2; background: gray;">
+    <x-pane style="color: green;">Pane0</x-pane>
+  </x-view>
+  <x-view style="flex: 1;">
+    <x-view style="flex-direction: row; height: 100%;">
+      <x-view style="flex: 3; background: #a88;">
+        <x-pane>Pane1</x-pane>
+      </x-view>
+      <x-view style="flex: 1; background: #8a8;">
+        <x-pane>Pane2</x-pane>
+      </x-view>
+    </x-view>
+  </x-view>
+</x-view>
 ```
 
-## Optional: Rocommended tools
-
-- https://github.com/prettier/prettier
-- https://github.com/paulirish/pwmetrics
-- https://github.com/xavdid/typed-install
-- https://github.com/saadq/lynt (at first linting)
-
-## Advanced: Build your own project like minfront
-
-This project is based on my handy shell command.
-
-```
-$ mkdir app_name; cd app_name
-$ yarn init -y; git init; gibo dump Node > .gitignore; yarn add typescript -D; yarn tsc --init
-```
-
-Optional: Replace `{app_name}` to `your-app-name` and remove README so far.
-
----
-
-# {app_name}
+![](https://gyazo.com/ee945134cf79415a4372e5b206ff5c1c)
 
 ## How to dev
 
