@@ -23,7 +23,7 @@
 </x-view>
 ```
 
-![](https://gyazo.com/ee945134cf79415a4372e5b206ff5c1c)
+![](https://gyazo.com/ee945134cf79415a4372e5b206ff5c1c.png)
 
 ## How to dev
 
